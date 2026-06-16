@@ -1,0 +1,13 @@
+{
+  "name": "program3-restful-api",
+  "version": "1.0.0",
+  "description": "RESTful API with comprehensive error handling",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  }
+}

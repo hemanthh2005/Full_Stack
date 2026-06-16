@@ -1,0 +1,12 @@
+{
+  "name": "program1-express-basic",
+  "version": "1.0.0",
+  "description": "Basic Express server with GET and POST routes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

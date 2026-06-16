@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists Example</title>
+</head>
+<body>
+
+    <h2>Fruits (Unordered List)</h2>
+
+    <ul>
+        {% for fruit in fruits %}
+            <li>{{ fruit }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Selected Students (Ordered List)</h2>
+
+    <ol>
+        {% for student in students %}
+            <li>{{ student }}</li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>
