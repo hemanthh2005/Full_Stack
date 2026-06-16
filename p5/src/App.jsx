@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
-  const [Question, setQuestion] = useState("");
-  const [Answer, setAnswer] = useState("");
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState("");
 
   const handleClick = (value) => {
     if (value === "=") {
       try {
-        setAnswer(eval(Question) || Math.error);
+        setAnswer(eval(question) || Math.error);
         setQuestion("");
       } catch {
         setAnswer("Math error");
@@ -17,7 +17,7 @@ const App = () => {
       setQuestion("");
       setAnswer("");
     } else {
-      setQuestion(Question + value);
+      setQuestion(question + value);
     }
   };
 
@@ -43,11 +43,11 @@ const App = () => {
 
   return (
     <div className="calculator">
-      <h2>React Calucaltor</h2>
+      <h2>React Calculator</h2>
 
       <div className="screen">
-        <input type="text" value={Question} readOnly />
-        <input type="text" value={Answer} readOnly />
+        <input type="text" value={question} readOnly />
+        <input type="text" value={answer} readOnly />
       </div>
 
       <div className="buttons">
